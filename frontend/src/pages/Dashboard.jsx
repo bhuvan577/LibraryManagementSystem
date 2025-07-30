@@ -1,4 +1,4 @@
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../../../library-frontend-fixed/src/context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import Books from "./Books";
 import AdminPanel from "./AdminPanel";

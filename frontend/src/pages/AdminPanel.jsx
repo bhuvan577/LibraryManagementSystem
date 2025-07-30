@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../../../library-frontend-fixed/src/context/AuthContext";
 
 const AdminPanel = () => {
   const { user } = useAuth();
