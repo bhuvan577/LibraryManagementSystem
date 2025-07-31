@@ -1,8 +1,9 @@
 const express = require("express");
 const { authMiddleware, isAdmin } = require("../middleware/auth");
-const Book = require("../models/bookModel");
-const User = require("../models/userModel");
+const Book = require("../models/Book");
+const User = require("../models/User");
 const Borrow = require("../models/borrowModel");
+const Book = require("../models/bookModel");
 
 const router = express.Router();
 
