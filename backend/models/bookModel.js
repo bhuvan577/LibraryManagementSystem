@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const bookSchema = new mongoose.Schema(
   {
@@ -38,6 +39,6 @@ const bookSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+const Book = mongoose.models.Book || mongoose.model("Book", bookSchema);
 
-const Book = mongoose.model("Book", bookSchema);
-export default Book;
+module.exports = Book;
