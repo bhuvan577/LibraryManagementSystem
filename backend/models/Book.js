@@ -10,7 +10,6 @@ const bookSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model("Book", bookSchema);
-const Model = mongoose.models.ModelName || mongoose.model("ModelName", schema);
-// Export the model
-module.exports = mongoose.model("Book", bookSchema);
+const User = mongoose.models.Book || mongoose.model("Book", bookSchema);
+
+module.exports = User;
