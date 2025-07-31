@@ -1,7 +1,7 @@
 // backend/routes/userRoutes.js
 const express = require("express");
 const User = require("../models/User");
-const Book = require("../models/Book");
+const Book = require("../models/bookModel");
 const { authMiddleware, requireRole } = require("../middleware/auth");
 
 const router = express.Router();

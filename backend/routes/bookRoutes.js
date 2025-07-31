@@ -1,6 +1,6 @@
 // backend/routes/bookRoutes.js
 const express = require("express");
-const Book = require("../models/Book");
+const Book = require("../models/bookModdel");
 const { authMiddleware, requireRole } = require("../middleware/auth");
 
 const router = express.Router();
